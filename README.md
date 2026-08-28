@@ -329,7 +329,7 @@ The README uses only a curated subset of the available evidence. Additional scre
 
 # Technologies & Tools
 
-`Windows 11` · `Windows PE` · `NTLite` · `VMware Workstation` · `CIS-CAT Lite` · `CIS Benchmarks` · `DiskPart` · `BCDBoot` · `SFC` · `Windows Registry` · `Local Group Policy` · `CMD`
+Windows 11 · Windows PE · NTLite · VMware Workstation · CIS-CAT Lite · CIS Benchmarks · Local Group Policy · Windows Registry · DiskPart · BCDBoot · System File Checker · PowerCfg · Command Prompt
 
 ---
 
