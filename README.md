@@ -35,7 +35,7 @@ The emphasis throughout the project is on **verification**: a configuration chan
 
 ---
 
-# 1. Custom Windows 11 Deployment
+## 1. Custom Windows 11 Deployment
 
 A Windows 11 Pro installation image was customized with **NTLite** for the fictional organization **TechFix Solutions**.
 
@@ -104,7 +104,7 @@ For the complete deployment rationale and validation model, see [`notes/deployme
 
 ---
 
-# 2. Windows Boot Recovery & Troubleshooting
+## 2. Windows Boot Recovery & Troubleshooting
 
 The recovery laboratory used four independent failure scenarios.
 
@@ -117,7 +117,7 @@ For every incident, the objective was to restore Windows **without formatting th
 | `INACCESSIBLE_BOOT_DEVICE` | `stornvme` startup value found disabled | Offline registry remediation |
 | Missing `ntoskrnl.exe` | Kernel file absent while related files remained present | Offline System File Checker |
 
-## Case 1 — Corrupted BCD
+### Case 1 — Corrupted BCD
 
 Windows PE was used to identify the offline Windows installation and EFI System Partition.
 
@@ -135,7 +135,7 @@ The command returned `Boot files successfully created`, after which the system w
 
 ---
 
-## Case 2 — Missing `winload.efi`
+### Case 2 — Missing `winload.efi`
 
 The suspected boot file was checked directly:
 
@@ -163,7 +163,7 @@ After remediation, the same file check confirmed that `winload.efi` had been res
 
 ---
 
-## Case 3 — `INACCESSIBLE_BOOT_DEVICE`
+### Case 3 — `INACCESSIBLE_BOOT_DEVICE`
 
 The system produced the stop code:
 
@@ -200,7 +200,7 @@ This incident demonstrates a targeted remediation based on confirmed evidence ra
 
 ---
 
-## Case 4 — Missing `ntoskrnl.exe`
+### Case 4 — Missing `ntoskrnl.exe`
 
 The Windows kernel file was checked directly:
 
@@ -226,7 +226,7 @@ For the complete four-incident troubleshooting analysis, see [`notes/boot-recove
 
 ---
 
-# 3. Windows Security Hardening
+## 3. Windows Security Hardening
 
 A controlled Windows 11 security-hardening exercise was performed with **CIS-CAT Lite Assessor** using the **CIS Microsoft Windows 11 Enterprise Benchmark — Level 1**.
 
@@ -260,7 +260,7 @@ See [`notes/security-hardening.md`](notes/security-hardening.md) for the sanitiz
 
 ---
 
-# Troubleshooting Method
+## Troubleshooting Method
 
 Across the recovery and hardening work, the same operational pattern was used:
 
@@ -291,7 +291,7 @@ For example:
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 ```text
 windows-endpoint-administration-lab/
@@ -327,13 +327,13 @@ The README uses only a curated subset of the available evidence. Additional scre
 
 ---
 
-# Technologies & Tools
+## Technologies & Tools
 
 Windows 11 · Windows PE · NTLite · VMware Workstation · CIS-CAT Lite · CIS Benchmarks · Local Group Policy · Windows Registry · DiskPart · BCDBoot · System File Checker · PowerCfg · Command Prompt
 
 ---
 
-# Project Status
+## Project Status
 
 **Completed laboratory case study**
 
