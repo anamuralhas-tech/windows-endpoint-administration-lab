@@ -73,8 +73,7 @@ Installed-system validation
 
 ### Custom ISO Generation
 
-<p align="center">
-  <img src="assets/deployment/custom-windows-iso-created.png" alt="NTLite custom Windows 11 ISO successfully created" width="900">
+<img src="assets/deployment/custom-windows-iso-created.png" alt="NTLite custom Windows 11 ISO successfully created" width="900">
 </p>
 
 <p align="center"><em>Customized Windows 11 image successfully processed and exported as a bootable ISO.</em></p>
